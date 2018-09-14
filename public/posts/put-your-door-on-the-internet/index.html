@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Jeremy Poole">
+    <meta name="description" content="Jeremy Poole is a web developer, specializing in JavaScript, HTML and CSS. He is located in Vancouver, BC, Canada">
+    <meta name="keywords" content="web,developer,javascript,vancouver,maker,blog">
+
+    <base href="https://jeremypoole.ca">
+    <title>
+  Put your door on the internet with an esp8266 · Jeremy Poole
+</title>
+
+    <link rel="canonical" href="https://jeremypoole.ca/posts/put-your-door-on-the-internet/">
+
+
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="https://jeremypoole.ca/css/style.min.css">
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://jeremypoole.ca/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://jeremypoole.ca/images/favicon-16x16.png" sizes="16x16">
+
+    
+
+    <meta name="generator" content="Hugo 0.42.1" />
+  </head>
+
+  <body class="">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    
+
+    <div class="header-avatar">
+      <a href="https://jeremypoole.ca" title="Home">
+        <span class="tiny tleft">{</span>
+        <img src="https://jeremypoole.ca/av.png" alt="Jeremy Poole" width="20px">
+        <span class="tiny tright">}</span>
+      </a>
+    </div>
+
+    
+    <ul class="navigation-list">
+      
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="https://jeremypoole.ca/posts/">Blog</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="https://jeremypoole.ca/clients/">Clients</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="https://jeremypoole.ca/employers/">Employers</a>
+      </li>
+      
+    </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+  <article>
+    <header>
+      <h1 class="title">Put your door on the internet with an esp8266</h1>
+      <h2 class="date">June 12, 2018</h2>
+
+      
+    </header>
+
+    
+
+<p>I live in an apartment building that has a very old buzzer/intercom system. I wanted be able to buzz myself in with only my smartphone, but there was a catch. I&rsquo;m a tenant, so it has to be removable and not damage anything. I was mostly successful.</p>
+
+<p>At it&rsquo;s most basic, the system consists of the following:</p>
+
+<h2 id="an-esp8266-microcontroller">An ESP8266 microcontroller</h2>
+
+<p>This is the brains of the operation. It is connected to the door release button in my apartment and wifi. It is programmed using the Arduino IDE, and exposes an API to be consumed by&hellip;</p>
+
+<h2 id="a-web-app">A web app</h2>
+
+<p>This is a very basic web app that features only a button to open the door.</p>
+
+<h2 id="security-warning"><strong>Security Warning</strong></h2>
+
+<p>Actually putting your front door on the open internet would be a bad idea. I have set it up so I must be on my local (wifi) network in order to unlock the door. Some sort of basic auth like a password would be a good idea, too.</p>
+
+  </article>
+
+  <br/>
+
+  
+  
+</section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+     © 2018  
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>

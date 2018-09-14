@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Jeremy Poole</title>
+    <link>https://jeremypoole.ca/posts/</link>
+    <description>Recent content in Posts on Jeremy Poole</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 12 Jun 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://jeremypoole.ca/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Put your door on the internet with an esp8266</title>
+      <link>https://jeremypoole.ca/posts/put-your-door-on-the-internet/</link>
+      <pubDate>Tue, 12 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://jeremypoole.ca/posts/put-your-door-on-the-internet/</guid>
+      <description>I live in an apartment building that has a very old buzzer/intercom system. I wanted be able to buzz myself in with only my smartphone, but there was a catch. I&amp;rsquo;m a tenant, so it has to be removable and not damage anything. I was mostly successful.
+At it&amp;rsquo;s most basic, the system consists of the following:
+An ESP8266 microcontroller This is the brains of the operation. It is connected to the door release button in my apartment and wifi.</description>
+    </item>
+    
+  </channel>
+</rss>

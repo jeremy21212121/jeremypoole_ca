@@ -1,0 +1,26 @@
+<nav class="navigation">
+  <section class="container">
+    <!-- <a class="navigation-title" href="{{ .Site.BaseURL }}">
+      {{ .Site.Title }}
+    </a> -->
+
+    <div class="header-avatar">
+      <a href="{{ .Site.BaseURL }}" title="Home">
+        <span class="tiny tleft">{</span>
+        <img src="{{ .Site.Params.avatar }}" alt="{{ .Site.Title }}" width="20px">
+        <span class="tiny tright">}</span>
+      </a>
+    </div>
+
+    {{ with .Site.Menus.main }}
+    <ul class="navigation-list">
+      <!-- {{ if $.Site.Params.rtl }} float-left {{ else }} float-right {{ end }} -->
+      {{ range sort . }}
+      <li class="navigation-item">
+        <a class="navigation-link" href="{{ .URL }}">{{ .Name }}</a>
+      </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+  </section>
+</nav>

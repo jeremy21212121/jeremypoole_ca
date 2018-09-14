@@ -1,0 +1,42 @@
+<section class="container centered">
+  <div class="about">
+    <div class="avatar-box">
+      <span class="huge">{</span>
+      <img src="{{ .Site.Params.avatar }}" alt="An artist's interpretation of {{ .Site.Params.author }}">
+      <span class="huge">}</span>
+    </div>
+
+
+    <h1>{{ .Site.Params.author }}</h1>
+    <h2>{{ .Site.Params.info }}</h2>
+    {{ with .Site.Params.social }}
+    <ul>
+      {{ range sort .}}
+      <li><a href="{{ .url }}"> <img src="{{ .logo }}" alt="{{ .name }}" title="{{ .name }}"></a></li>
+      {{ end }}
+    </ul>
+    {{ end }}
+  </div>
+  <div class="intro-content">
+    <h3>What I do</h3>
+    <p>
+      I specialize in full service web development for small- and medium-sized businesses in the Vancouver area.
+    </p>
+
+    <h3>That's nice, but what does it actually mean?</h3>
+
+    <p>
+      It means I don't just e-mail you some files and say "Here's that website you ordered. Good luck!"
+    </p>
+    <p>
+      I assist your business every step of the way. From determining what you need, to making it happen, and providing ongoing support: All with minimal interruption to your operations.
+    </p>
+    <p>
+      To find out more about what I can do for your business, please see my <a href="/clients">Clients page</a>.
+    </p>
+    <p>
+      I'm also open to remote or local work in the Vancouver, BC area with the right organization. Please see my <a href="/employers">Employers</a> page or <a id="email" title="contact me" href="#">contact me</a>.
+    </p>
+
+  </div>
+</section>

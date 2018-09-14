@@ -1,0 +1,65 @@
+
+baseurl = "https://jeremypoole.ca" # Hostname (and path) to the root.
+title = "Jeremy Poole" # Site title.
+theme = "coder" # Set the theme
+languagecode = "en" # The site’s language code.
+
+paginate = 20 # Default number of pages per page in pagination.
+canonifyurls = true # Enable to turn relative URLs into absolute.
+
+pygmentsstyle = "b2" # Color-theme or style for syntax highlighting.
+pygmentscodefences = true # Enable code fence background highlighting.
+pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences without specified language.
+
+[params] # theme parameters
+
+    author = "Jeremy Poole" # Author's name.
+    avatar = "/images/av.png" # Avatar url.
+    info = "Web developer and maker. I love to learn." # Author's job title or info.
+    description = "Jeremy Poole is a web developer, specializing in JavaScript, HTML and CSS. He is located in Vancouver, BC, Canada" # Site description.
+    keywords = "web,developer,javascript,vancouver,maker,blog" # Site keywords.
+
+    #disqusShortname = "yourdiscussshortname" # Enable or disable Disqus
+
+    # Whether you want to hide copyright and credits in the footer.
+    hideCredits = true
+    hideCopyright = false
+
+    # Custom CSS
+    custom_css = ["/css/custom.css"]
+
+    # RTL support
+    rtl = false
+
+# Social links
+[[params.social]]
+    name = "Github"
+    logo = "/images/github.png"
+    weight = 1
+    url = "https://github.com/jeremy21212121/"
+#[[params.social]]
+#    name = "Twitter"
+#    weight = 2
+#    url = "https://twitter.com/johndoe/"
+#[[params.social]]
+#    name = "LinkedIn"
+#    weight = 3
+#    url = "https://www.linkedin.com/in/johndoe/"
+
+# Menu links
+[[menu.main]]
+    name = "Blog"
+    weight = 1
+    url  = "/posts/"
+[[menu.main]]
+    name = "Clients"
+    weight = 2
+    url = "/clients/"
+[[menu.main]]
+    name = "Employers"
+    weight = 2
+    url = "/employers/"
+
+# [avatar]
+#    url = "/static/av.png" # Avatar url.
+#    alt = "Artist's Rendering of Jeremy Poole"

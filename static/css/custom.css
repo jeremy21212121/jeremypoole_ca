@@ -1,0 +1,9 @@
+.screenshot img {
+  display: block;
+  margin: 0 auto;
+  max-width: 50%;
+}
+
+h3.testimonial {
+  margin-top: 10%;
+}
