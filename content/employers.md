@@ -3,9 +3,9 @@ title = "Employers"
 slug = "employers"
 +++
 
-I am available for hire for the right contract or full-time position. 
+I am available for hire for the right contract or full-time position.
 
-I'd love to join a team to join where I can further develop my skills.
+I'd love to join a team where I can further develop my skills.
 
 While I would prefer to work locally in Vancouver, I am also open to remote positions.
 
@@ -21,7 +21,7 @@ I love to learn, and have a keen interest in all aspects of web development and 
 
 As a front-end web developer, I am proficient with the latest features of javascript, CSS3 and HTML5. My preferred javascript framework is currently Vue JS, but I'm generally framework-agnostic.
 
-I am extremely adept at troubleshooting and getting to the root of a problem. I have strong need to understand how all the pieces fit together.
+I am extremely adept at troubleshooting and getting to the root of a problem. I have a strong need to understand how all the pieces fit together.
 
 I love making fast, intuitive sites and applications. I am comfortable working from proofs, vague ideas, or anything between.
 
@@ -35,4 +35,3 @@ Please check out the following to see some of my work:
 * [The testimonials section of my Clients page](/clients#testimonials)
 
 * I have a private GitLab repo. <a id="email" href="#">Contact me for access.</a>
-
