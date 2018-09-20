@@ -3,7 +3,13 @@
   margin: 0 auto;
   max-width: 50%;
 }
-
 h3.testimonial {
   margin-top: 10%;
+}
+figure.blog-figure img {
+display: block;
+margin: 0 auto;
+}
+figure.blog-figure figcaption {
+text-align: center;
 }

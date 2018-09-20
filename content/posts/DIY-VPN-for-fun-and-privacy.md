@@ -1,6 +1,7 @@
 +++
 date = "2018-07-15"
 title = "DIY VPN for fun and security"
+tags = ["technical","VPN","security"]
 math="false"
 +++
 
