@@ -6,6 +6,9 @@
 h3.testimonial {
   margin-top: 10%;
 }
+figure.blog-figure {
+margin: 0 auto;
+}
 figure.blog-figure img {
 display: block;
 margin: 0 auto;
