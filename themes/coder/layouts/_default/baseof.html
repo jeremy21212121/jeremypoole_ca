@@ -14,8 +14,9 @@
 
     <link rel="canonical" href="{{ .Permalink }}">
 
-    {{ $stylemin := os.Stat "themes/coder/static/css/style.min.css" }}
-    <link rel="stylesheet" href="{{ "css/style.min.css" | absURL }}?{{ $stylemin.ModTime.Unix }}">
+    {{ $sass := resources.Get "scss/style.scss" }}
+    {{ $style := $sass | toCSS (dict "outputStyle" "compressed" "enableSourceMap" true "targetPath" "css/main.css") | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
 
     {{ if .Site.Params.rtl}}
       <link rel="stylesheet" href="{{ "css/style-rtl.min.css" | absURL }}">
