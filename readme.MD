@@ -5,3 +5,11 @@ This repo contains the content and theme for my personal/professional website, [
 The theme is a modified version of [hugo-coder](https://github.com/luizdepra/hugo-coder).
 
 At some point I will seperate out the theme into its own repo.
+
+## dev / build
+
+dev:
+```hugo serve -D```
+
+build:
+```hugo -d export/ -b "https://jeremypoole.ca"```
