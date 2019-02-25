@@ -181,9 +181,10 @@ img {
   width: 100%;
 	.container {
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: space-between;
 
 		.header-avatar {
+      flex-grow: 1;
 
 			a {
 				text-decoration: none;
@@ -218,7 +219,10 @@ img {
 			}
 		}
 		.navigation-list {
-			padding: 0px;
+      padding: 0px;
+      flex-grow: 2;
+      display: flex;
+      justify-content: space-around;
 		}
 	}
   a {
@@ -236,9 +240,10 @@ img {
     margin-bottom: 0;
     margin-top: 0;
     li {
-      float: left;
+      // float: left;
+      // flex-grow: 1;
       margin: 0;
-      position: relative;
+      // position: relative;
       a {
         margin-left: 1.0rem;
         margin-right: 1.0rem;

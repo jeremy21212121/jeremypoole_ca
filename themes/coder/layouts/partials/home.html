@@ -37,6 +37,118 @@
     <p>
       I'm also open to remote or local work in the Vancouver, BC area with the right organization. Please see my <a href="/employers">Employers</a> page or <a id="email" title="contact me" href="#">contact me</a>.
     </p>
-
   </div>
 </section>
+
+<section class="contact-form container">
+  <div class="contact-wrapper">
+    <h3>Contact me</h3>
+    <form id="contact-form-element" action="/send" method="post">
+      <input type="text" id="name" name="name" placeholder="name" maxlength="90" required>
+      <input type="email" id="email" name="email" placeholder="email" maxlength="90" required>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="phone" maxlength="10" value="0000000000" aria-hidden="true" required>
+      <textarea id="text" name="text" rows="8" maxlength="400" placeholder="message" required></textarea>
+      <span id="contact-form-status"></span>
+      <button type="submit" id="submit" name="submit" disabled="true">Submit</button>
+    </form>
+  </div>
+</section>
+
+<style>
+  .contact-wrapper {
+    /* border: 1px solid #999; */
+    border-radius: 3px;
+    max-width: 65rem;
+    margin: 0 auto;
+  }
+  .contact-wrapper h3 {
+    text-align: center;
+  }
+  #contact-form-element {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 60rem;
+    padding: 8%;
+    padding-top: 2%;
+  }
+  #contact-form-element input, #contact-form-element textarea, #contact-form-element button {
+    margin: 0.5rem 0;
+    border-radius: 3px;
+    line-height: 1.1em;
+    font-size: 1.1em;
+    border: 1px solid #999;
+    font-family: 'montserrat';
+  }
+  #contact-form-element button {
+    line-height: 3rem;
+    font-weight: bold;
+    color: rgba(0,0,0,0.7);
+    
+  }
+  #contact-form-status {
+    text-align: center;
+  }
+  form#contact-form-element input#phone {
+    position: absolute;
+    opacity: 0;
+  }
+</style>
+
+<script>
+  (function() {
+    var form = document.getElementById('contact-form-element');
+    if (form) {
+      var statusSpan = document.getElementById('contact-form-status');
+
+      window.addEventListener('load',function() { form.elements.submit.disabled = false } );
+
+      var validatePhone = function(dataObj, phoneNumberStr) {
+        if (phoneNumberStr==="0000000000") { return };
+        dataObj.phone = phoneNumberStr;
+      }
+
+      form.addEventListener('submit', function(e) {
+
+        e.preventDefault();
+        var data = {
+          name: e.target.elements.name.value,
+          email:e.target.elements.email.value,
+          text: e.target.elements.text.value
+        };
+
+        validatePhone(data, e.target.elements.phone.value);
+
+        var req = new XMLHttpRequest();
+        var url = "/api"+form.action;
+        req.open(form.method.toUpperCase(), url, true);
+        req.setRequestHeader('Content-type', 'application/json');
+
+        req.onreadystatechange = function() {
+          if (req.readyState === 4) {
+            switch (req.status) {
+              case 200:
+                statusSpan.innerText = "Message sent. Thanks!";
+                break;
+              case 403:
+                statusSpan.innerText = "Terribly sorry, your message was flagged as spam.";
+                break;
+              case 429:
+                const mins = Math.round((parseInt(req.getResponseHeader('X-RateLimit-Reset')) - (Date.now()/1000))/60 );
+                statusSpan.innerText = "Sorry, too many messages from this IP. Try again in " + mins + " minutes.";
+                break;
+              case 500:
+                statusSpan.innerText = "Internal Server Error. Please try again later.";
+                break;
+              default:
+                statusSpan.innerText = "Error: Try again later or contact site operator.";
+                break;
+            }
+            form.reset();
+          }
+        }
+        req.send(JSON.stringify(data));
+      })
+    }
+  })();
+</script>
