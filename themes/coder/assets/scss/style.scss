@@ -15,8 +15,9 @@ html {
 }
 
 body {
+    margin: 0;
   display: flex;
-	min-width: 360px;
+	min-width: 344px;
   color: $fg-color;
 	background-color: $bg-color;
 	font-family: 'montserrat', monospace;
@@ -172,8 +173,7 @@ img {
   margin: 0 auto;
   max-width: 120.0rem;
   width: 100%;
-  padding-left: 2.0rem;
-  padding-right: 2.0rem;
+  padding: 0 1rem;
 }
 
 .navigation {
@@ -181,8 +181,8 @@ img {
   width: 100%;
 	.container {
 		display: flex;
-		justify-content: space-between;
-		padding: 0em 0.5em 0em 0.5em;
+		justify-content: space-evenly;
+
 		.header-avatar {
 
 			a {
@@ -322,11 +322,10 @@ img {
 
 .container.centered {
   display: flex;
-  // height: 200vh; min-wodth
-  // align-items: center;
-  justify-content: space-around;
-	flex-direction: column;
-	.intro-content {
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  .intro-content {
 		p {
 			margin-top: 8%;
 			margin-bottom: 10%;
@@ -438,7 +437,7 @@ img {
   line-height: 6.0rem;
 	.footer-nav {
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-evenly;
 		max-width: 120rem;
 		margin: 0 auto;
 		margin-top: 10%;
