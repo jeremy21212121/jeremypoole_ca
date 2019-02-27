@@ -9,7 +9,7 @@ At some point I will seperate out the theme into its own repo.
 ## dev / build
 
 dev:
-```hugo serve -D```
+```hugo serve --noHTTPCache```
 
 build:
 ```hugo -d export/ -b "https://jeremypoole.ca"```
