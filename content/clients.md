@@ -82,6 +82,9 @@ I took design cues from their original website and menu and coded a custom integ
 > 
 > --- Michelle W., Jr. Editor
 
+The Bread Magazine, a restaurant industry magazine, came to me for help moving online. They wanted a publishing platform that captured the essence of their print magazine.
+
+I helped them refine their design, then brought it to life. I built them a custom WordPress theme and I hosted it on a high-performance web server.
 
 ## Contact
 
