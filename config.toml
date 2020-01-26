@@ -37,15 +37,16 @@ pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences wi
     logo = "/images/github.png"
     weight = 1
     url = "https://github.com/jeremy21212121/"
-#[[params.social]]
-#    name = "Twitter"
-#    weight = 2
-#    url = "https://twitter.com/johndoe/"
 [[params.social]]
     name = "LinkedIn"
     logo = "/images/linkedin.png"
-    weight = 3
+    weight = 2
     url = "https://www.linkedin.com/in/jeremy-poole-10041a10a/"
+[[params.social]]
+    name = "Triplebyte certificate"
+    logo = "/images/triplebyte.png"
+    weight = 3
+    url = "https://triplebyte.com/certificate/bk2AWtG"
 
 # Menu links
 [[menu.main]]
