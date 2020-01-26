@@ -1,7 +1,14 @@
 .screenshot img {
   display: block;
   margin: 0 auto;
-  max-width: 50%;
+  width: 33%;
+  max-width: 200px;
+}
+.desktop-screenshot img {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  max-width: 400px;
 }
 h3.testimonial {
   margin-top: 10%;
@@ -15,4 +22,39 @@ margin: 0 auto;
 }
 figure.blog-figure figcaption {
 text-align: center;
+}
+details[open] {
+//background-color: red;
+}
+
+details[open] summary {
+content: '';
+}
+.testimonial {
+text-decoration: underline;
+font-size: 1.5em;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+   background-color: #1d1d1d !important;
+   color: rgba(255,255,255,0.7) !important;
+  }
+  h1,h2,h3,h4,a {
+   color: rgba(255,255,255,0.7) !important;
+  }
+  .about ul li img {
+   background-color: rgba(255,255,255,0.7) !important;
+   padding: 3px !important;
+   width: 32px !important;
+   border-radius: 3px !important;
+  }
+  div.desktop-screenshot img {
+   background-color: rgba(255,255,255,0.2) !important;
+   padding: 4px !important;
+   border-radius: 3px !important;
+  }
+  .navigation .container .header-avatar .tiny, .huge {
+   color: rgba(255,255,255,0.5) !important;
+  }
 }

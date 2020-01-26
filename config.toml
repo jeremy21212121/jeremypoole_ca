@@ -15,9 +15,9 @@ pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences wi
 
     author = "Jeremy Poole" # Author's name.
     avatar = "/images/av.png" # Avatar url.
-    info = "Your friendly neighbourhood web developer." # Author's job title or info.
-    description = "Jeremy Poole is a web developer, specializing in JavaScript, HTML and CSS. He is located in Vancouver, BC, Canada" # Site description.
-    keywords = "web,developer,javascript,vancouver,maker,blog" # Site keywords.
+    info = "Front-end freelancer, node.js and more" # Author's job title or info.
+    description = "Jeremy Poole is a freelance web developer, specializing in JavaScript, HTML and CSS. He is located in Vancouver, BC, Canada" # Site description.
+    keywords = "web,developer,javascript,vancouver" # Site keywords.
 
     #disqusShortname = "yourdiscussshortname" # Enable or disable Disqus
 
@@ -41,24 +41,22 @@ pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences wi
 #    name = "Twitter"
 #    weight = 2
 #    url = "https://twitter.com/johndoe/"
-#[[params.social]]
-#    name = "LinkedIn"
-#    weight = 3
-#    url = "https://www.linkedin.com/in/johndoe/"
+[[params.social]]
+    name = "LinkedIn"
+    logo = "/images/linkedin.png"
+    weight = 3
+    url = "https://www.linkedin.com/in/jeremy-poole-10041a10a/"
 
 # Menu links
 [[menu.main]]
-    name = "Blog"
+    name = "Home"
     weight = 1
-    url  = "/posts/"
+    url  = "/"
 [[menu.main]]
-    name = "Clients"
+    name = "Projects"
     weight = 2
-    url = "/clients/"
-[[menu.main]]
-    name = "Employers"
-    weight = 2
-    url = "/employers/"
+    url = "/projects/"
+
 
 # [avatar]
 #    url = "/static/av.png" # Avatar url.

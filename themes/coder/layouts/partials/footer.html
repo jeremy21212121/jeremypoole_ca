@@ -1,9 +1,7 @@
 <footer class="footer">
   <section class="footer-nav">
     <a href="/" title="Go to home page">home</a>
-    <a href="/blog" title="Go to blog">blog</a>
-    <a href="/clients" title="Go to clients page">clients</a>
-    <a href="/employers" title="Go to employers page">employers</a>
+    <a href="/projects" title="Go to projects">projects</a>
   </section>
   <section class="container copyright">
     {{ if not .Site.Params.hideCopyright }} <p>© {{ now.Year }} <a href="https://jeremypoole.ca">Jeremy Poole</a></p> {{ end }} {{ if not .Site.Params.hideCredits}} {{ if not .Site.Params.hideCopyright }} · {{ end }} Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>. {{ end }}

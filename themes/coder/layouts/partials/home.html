@@ -20,22 +20,35 @@
   <div class="intro-content">
     <h3>What I do</h3>
     <p>
-      I specialize in full service web development for small- and medium-sized businesses in the Vancouver area.
+      I'm a freelancer specializing in front-end applications built with Vue.js
+    </p>
+    <p>
+		I also have experience with a variety of frontend frameworks, SSR, Node/Express applications and linux devops.
     </p>
 
-    <h3>That's nice, but what does it actually mean?</h3>
-
+	<ul>
+		<li>Lean, data driven applications</li>
+		<li>Progressive web apps</li>
+		<li>Fast development, testing, deploy cycles</li>
+		<li>Integration with in house and third party APIs</li>
+		<li>Customer facing and internal applications</li>
+		<li>Industry-specific content authoring applications</li>
+	</ul>
+	<h3>
+		Skills
+	</h3>
+	<ul>
+		<li>Extensive knowledge of best practices in HTML/CSS/JS</li>
+		<li>Ability to adjust to in-house coding styles and practices</li>
+		<li>Highly productive</li>
+		<li>I work great with internal teams</li>
+		<li>Tireless troubleshooter</li>
+	</ul>
     <p>
-      It means I don't just e-mail you some files and say "Here's that website you ordered. Good luck!"
+      I'm always looking for a new challenge. Please check out my <a href="/projects">projects page</a> to see some of the projects I've worked on and read the recommendations on my <a href="https://www.linkedin.com/in/jeremy-poole-10041a10a/" target="_blank" rel="noopener">LinkedIn profile</a>.
     </p>
     <p>
-      I assist your business every step of the way. From determining what you need, to making it happen, and providing ongoing support: All with minimal interruption to your operations.
-    </p>
-    <p>
-      To find out more about what I can do for your business, please see my <a href="/clients">Clients page</a>.
-    </p>
-    <p>
-      I'm also open to remote or local work in the Vancouver, BC area with the right organization. Please see my <a href="/employers">Employers</a> page or <a id="email" title="contact me" href="#">contact me</a>.
+      If you think I might be a good fit for remote or local work in the Vancouver, BC area, please <a id="email" title="contact me" href="#">contact me</a>.
     </p>
   </div>
 </section>
@@ -99,61 +112,64 @@
 
 <script>
   (function() {
-    var form = document.getElementById('contact-form-element');
-    
-    if (form) {
-      form.elements.phone.disabled = true;
-      var statusSpan = document.getElementById('contact-form-status');
+	window.setTimeout(function() {
+		var form = document.getElementById('contact-form-element');
+		
+		if (form) {
+		  form.elements.phone.disabled = true;
+		  var statusSpan = document.getElementById('contact-form-status');
 
-      window.addEventListener('load',function() { form.elements.submit.disabled = false } );
+		  form.elements.submit.disabled = false;
 
-      var validatePhone = function(dataObj, phoneNumberStr) {
-        if (phoneNumberStr==="0000000000") { return };
-        dataObj.phone = phoneNumberStr;
-      }
+		  var validatePhone = function(dataObj, phoneNumberStr) {
+			if (phoneNumberStr==="0000000000") { return };
+			dataObj.phone = phoneNumberStr;
+		  }
 
-      form.addEventListener('submit', function(e) {
+		  form.addEventListener('submit', function(e) {
 
-        e.preventDefault();
-        var data = {
-          name: e.target.elements.name.value,
-          email:e.target.elements.email.value,
-          text: e.target.elements.text.value
-        };
+			e.preventDefault();
+			var data = {
+			  name: e.target.elements.name.value,
+			  email:e.target.elements.email.value,
+			  text: e.target.elements.text.value
+			};
 
-        validatePhone(data, e.target.elements.phone.value);
+			validatePhone(data, e.target.elements.phone.value);
 
-        var req = new XMLHttpRequest();
-        var url ="https://jeremypoole.ca/api/send";
+			var req = new XMLHttpRequest();
+			var url ="https://jeremypoole.ca/api/send";
 
-        req.onreadystatechange = function() {
-          if (req.readyState === 4) {
-            switch (req.status) {
-              case 200:
-                statusSpan.innerText = "Message sent. Thanks!";
-                break;
-              case 403:
-                statusSpan.innerText = "Terribly sorry, your message was flagged as spam.";
-                break;
-              case 429:
-                const mins = Math.round((parseInt(req.getResponseHeader('X-RateLimit-Reset')) - (Date.now()/1000))/60 );
-                statusSpan.innerText = "Sorry, too many messages from this IP. Try again in " + mins + " minutes.";
-                break;
-              case 500:
-                statusSpan.innerText = "Internal Server Error. Please try again later.";
-                break;
-              default:
-                statusSpan.innerText = "Error: Try again later or contact site operator.";
-                break;
-            }
-            form.reset();
-          }
-        }
-        req.open("POST", url, true);
-        req.setRequestHeader('Content-Type', 'application/json');
-        req.send(JSON.stringify(data));
-      })
-    }
+			req.onreadystatechange = function() {
+			  if (req.readyState === 4) {
+				switch (req.status) {
+				  case 200:
+					statusSpan.innerText = "Message sent. Thanks!";
+					break;
+				  case 403:
+					statusSpan.innerText = "Terribly sorry, your message was flagged as spam.";
+					break;
+				  case 429:
+					const mins = Math.round((parseInt(req.getResponseHeader('X-RateLimit-Reset')) - (Date.now()/1000))/60 );
+					statusSpan.innerText = "Sorry, too many messages from this IP. Try again in " + mins + " minutes.";
+					break;
+				  case 500:
+					statusSpan.innerText = "Internal Server Error. Please try again later.";
+					break;
+				  default:
+					statusSpan.innerText = "Error: Try again later or contact site operator.";
+					break;
+				}
+				form.reset();
+			  }
+			}
+			req.open("POST", url, true);
+			req.setRequestHeader('Content-Type', 'application/json');
+			req.send(JSON.stringify(data));
+		  })
+		}
+
+	}, 7500) // I defy a non-bot to hit the contact form in less than 8 seconds
 
   })();
 </script>
