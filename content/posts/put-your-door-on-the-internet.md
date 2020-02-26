@@ -1,6 +1,7 @@
 +++
 date = "2019-01-12"
-title = "IoOT - Interent of Old Things"
+updated="2020-01-17"
+title = "IoOT - Internet of Old Things"
 math="false"
 published="true"
 +++
@@ -43,12 +44,19 @@ This is the brains of the operation. It is connected to the door release button 
 
 This is a very [basic web app](https://github.com/jeremy21212121/doorman-webapp) that features only a button to open the door. It works with a hard-coded IP address that is only accessible on my local network. Adding mDNS would allow me to remove the hard coded IP, but unfortunately my phone doesnt support mDNS :(
 
+It is hosted at old.jeremypoole.ca and intentionally served over plain HTTP to avoid a mixed content error in the browser.
 
 
 ## __Security Warning__
 
 Actually putting your front door on the open internet would be a bad idea. I have set it up so I must be on my local (wifi) network in order to unlock the door. Some sort of basic auth like a password would be a good idea, too, as it is currently pretty insecure.
 
+It is also an XSS nightmare, as any website I browse could potentially unlock the door if it knew the URL. That would be a great targeted attack vector, if only I was more interesting and/or that door wasn't left open half the time anyway.
+
 ## But how reliable is it?
 
 I have been absolutely shocked by the stability of this contraption. The only outages have been caused by my accidental disconnection of the power supply. The credit for this stability should go to the [devlopers of that lovely esp8266 arduino library](https://github.com/esp8266/Arduino/graphs/contributors).
+
+### Update: January 2020
+
+Still going strong a year later. It has been unreasonably reliable, considering it is run on a discount dev board. The LED burned out because they were too cheap to put a resistor inline and yet this monster marches on. When the board finally dies, I will use a smaller one and embed it inside the handset so it is invisible! I only installed it externally to make for easy servicing which miraculously hasn't been necessary.

@@ -1,5 +1,6 @@
 +++
 date = "2018-09-09"
+updated="2020-02-15"
 title = "The dangers of cheap website hosting providers"
 tags = ["clients"]
 math="false"
@@ -18,6 +19,8 @@ First, a quick overview of how they work. In order to be profitable, these provi
 This works OK for low-traffic websites, but if all these sites saw a large spike in traffic, it would quickly overload the server.
 
 In order to prevent this from happening, if your site gets a lot of traffic, it will be cut off. It is spelled out, clear as mud, in the massive end user license agreement that nobody ever reads.
+
+In other words:
 
 > "...if your site gets a lot of traffic, it will be cut off."
 
@@ -41,8 +44,3 @@ By hosting their website on a server in a nearby data centre, I was able to redu
 
 If your website needs to load quickly and be reliable, I would avoid discount shared hosting providers like the plague.
 
-## The good news
-
-I can take care of all these details for you, and many more.
-
-If you'd like to find out how I can help your business, please <a id="email" href="#" title="Contact Jeremy">contact me</a>.

@@ -20,19 +20,19 @@
   <div class="intro-content">
     <h3>What I do</h3>
     <p>
-      I'm a freelancer specializing in front-end applications built with Vue.js, located in Vancouver.
+      I'm a freelancer and contractor specializing in front-end applications built with Vue.js, living in Vancouver, BC.
     </p>
     <p>
-		I also have experience with a variety of frontend frameworks, SSR, Node/Express applications and linux devops.
+		I have experience with a variety of frontend frameworks, progressive web apps (PWA), server-side rendering (SSR), Node/Express back ends and linux devops.
     </p>
 
 	<ul>
 		<li>Lean, data driven applications</li>
-		<li>Progressive web apps</li>
+		<li>Cross-platform PWAs</li>
 		<li>Fast development, testing, deploy cycles</li>
 		<li>Integration with in house and third party APIs</li>
 		<li>Customer facing and internal applications</li>
-		<li>Industry-specific content authoring applications</li>
+		<li>Industry-specific content management applications</li>
 	</ul>
 	<h3>
 		Skills
@@ -59,8 +59,7 @@
     <form id="contact-form-element" action="/send" method="post">
       <input type="text" id="name" name="name" placeholder="name" maxlength="90" required>
       <input type="email" id="email" name="email" placeholder="email" maxlength="90" required>
-      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="phone" maxlength="10" value="0000000000" aria-hidden="true" required>
-      <textarea id="text" name="text" rows="8" maxlength="400" placeholder="message" required></textarea>
+      <textarea id="text" name="text" rows="8" maxlength="1024" placeholder="message" required></textarea>
       <span id="contact-form-status"></span>
       <button type="submit" id="submit" name="submit" disabled="true">Submit</button>
     </form>
@@ -98,34 +97,23 @@
     line-height: 3rem;
     font-weight: bold;
     color: rgba(0,0,0,0.7);
-    
   }
   #contact-form-status {
     text-align: center;
-  }
-  form#contact-form-element input#phone {
-    position: absolute;
-    opacity: 0;
-    z-index: 0;
   }
 </style>
 
 <script>
   (function() {
-	window.setTimeout(function() {
+	  window.contactApiUrl = 'https://jeremypoole.ca/always/yes';
 		var form = document.getElementById('contact-form-element');
 		
 		if (form) {
-		  form.elements.phone.disabled = true;
 		  var statusSpan = document.getElementById('contact-form-status');
 
 		  form.elements.submit.disabled = false;
 
-		  var validatePhone = function(dataObj, phoneNumberStr) {
-			if (phoneNumberStr==="0000000000") { return };
-			dataObj.phone = phoneNumberStr;
-		  }
-
+          window.setTimeout(function() { window.contactApiUrl = 'https://jeremypoole.ca/api/send' }, 7750);
 		  form.addEventListener('submit', function(e) {
 
 			e.preventDefault();
@@ -135,10 +123,7 @@
 			  text: e.target.elements.text.value
 			};
 
-			validatePhone(data, e.target.elements.phone.value);
-
 			var req = new XMLHttpRequest();
-			var url ="https://jeremypoole.ca/api/send";
 
 			req.onreadystatechange = function() {
 			  if (req.readyState === 4) {
@@ -163,13 +148,11 @@
 				form.reset();
 			  }
 			}
-			req.open("POST", url, true);
+			req.open("POST", window.contactApiUrl, true);
 			req.setRequestHeader('Content-Type', 'application/json');
 			req.send(JSON.stringify(data));
 		  })
 		}
-
-	}, 7500) // I defy a non-bot to hit the contact form in less than 8 seconds
 
   })();
 </script>
