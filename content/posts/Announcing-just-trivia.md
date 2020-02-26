@@ -6,13 +6,22 @@ math="false"
 published="true"
 +++
 
-# Announcing JustTrivia.fun, a lean mobile trivia game for phones and tablets
+<figure class="blog-figure">
+<a href="https://justtrivia.fun">
+<img src="/images/trivia.png" alt="Just Trivia logo"/>
+</a>
+<figcaption>
+Logo for <a href="https://justtrivia.fun">Just Trivia</a>
+</figcaption>
+</figure>
+
+## Announcing JustTrivia.fun, a lean mobile trivia game for phones and tablets
 
 The MVP of my passion project has just been released! [Just Trivia](https://justtrivia.fun) is a mobile-focused trivia game with no ads, tracking, or monetization of any kind. I built this because I wanted a simple, light-weight trivia game to play on my phone, but couldn't find one.
 
 It is a progressive web app, which means it can be installed to the home screen on mobile devices and behaves like a native app on subsequent launches. It is lean, with the whole app bundle, before splitting, weighing in at about 700kb. Each round of 10 questions only uses about 7kb of data.
 
-# Early reception
+## Early reception
 
 I soft-launched the MVP of this game 3 days ago and I have been delighted with the usage so far. Before yesterday, I had only sent the link to a few friends and family. The peak load had been about 3 concurrent users.
 
@@ -62,38 +71,38 @@ $ cat access.log | grep /start | sed -r 's/(^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\
 
 I am truly amazed. To the person in Minnesota that played 8 rounds, thank you so much!
 
-# Next steps
+## Next steps
 
 These results have me blown away. I was planning to do a "Show: HN" post in the near future, but I might have to move that timeline up! I have so many great ideas for the future and this has been really encouraging.
 
-## Offline play
+### Offline play
 
 > [Github issue](https://github.com/jeremy21212121/trivia-frontend/issues/6)
 
 The whole trivia DB is only about 1 MB. By including the DB and server logic in a service worker, we can enable offline play with minimal modification to the client. This is a high priority for me.
 
-## Score tracking and visualizations
+### Score tracking and visualizations
 
 > [Github issue](https://github.com/jeremy21212121/trivia-frontend/issues/9)
 
 I have some good ideas for storing score-related data and visualizing it for the user. This will enable showing streaks of correct answers, results of previous attempts at a question, etc.
 
-## Improve and add questions
+### Improve and add questions
 
 I'm working on an interface to allow people to easily propose updates and new questions. I'm also manually curating the DB, updating questions with typos or out of data answers.
 
-## In-game feedback
+### In-game feedback
 A low-friction way to provide feedback on the game or a particular question. Currently the best option is to [open an issue](https://github.com/jeremy21212121/trivia-frontend/issues) on github.
 
 Stay tuned, because there are many refinements and improvements to come!
 
-# Github repos
+## Github repos
 
 [This](https://github.com/jeremy21212121/trivia-frontend) is the repo for the Vue.js/Nuxt.js front-end.
 
 [This](https://github.com/jeremy21212121/express-trivia-server) is the repo for the Node/Express back-end. It is in pretty rough shape at the moment, don't judge me 😉.
 
-# Hire me
+## Hire me
 
 I'm available for hire! Ideally I'm looking for full-time employment in Vancouver, BC, Canada. But I also love remote work and contracts, as long as there are challenging problems to solve.
 
