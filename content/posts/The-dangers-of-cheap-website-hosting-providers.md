@@ -1,8 +1,8 @@
 +++
 date = "2018-09-09"
-updated="2020-02-15"
+updated="2020-05-22"
 title = "The dangers of cheap website hosting providers"
-tags = ["clients"]
+tags = ["hosting"]
 math="false"
 +++
 
@@ -42,5 +42,5 @@ I had a client that used a shared hosting provider. Their server was located in 
 
 By hosting their website on a server in a nearby data centre, I was able to reduce the round trip time to about 30ms, or 0.03 seconds. This, coupled with other optimizations I made to the web server, resulted in the page load time dropping nearly 10x from 2-3 seconds to well under a second.
 
-If your website needs to load quickly and be reliable, I would avoid discount shared hosting providers like the plague.
+If your website needs to load quickly and be reliable, I would avoid discount shared hosting providers like the plague. That being said, for ultra-low-volume hobby projects they can be perfectly fine.
 
