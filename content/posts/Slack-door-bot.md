@@ -1,6 +1,9 @@
 +++
 date = "2019-08-09"
+lastmod = "2021-02-04"
 title = "Slack door bot"
+description = "Open the office door from Slack using the ESP8266 System-on-Chip"
+image = "images/slack_doorbot1200x630.jpg"
 tags = ["slack","IOT","bot","electronics","esp8266","arduino"]
 math="false"
 published="true"

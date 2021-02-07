@@ -1,6 +1,8 @@
 +++
 date = "2021-01-07"
 title = "Announcing EvoFinder.ca"
+description = "EvoFinder is an unofficial web client for evo car share written in TypeScript"
+image = "/images/ef.jpg"
 tags = ["security","webdev","mitmproxy"]
 math="false"
 published="true"

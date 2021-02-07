@@ -1,10 +1,20 @@
 +++
 date = "2019-01-12"
-updated="2020-01-17"
+lastmod="2020-02-03"
 title = "IoOT - Internet of Old Things"
+description = "Connecting a vintage intercom system to the internet with the ESP8266 SoC"
+image = "images/va-k_esp8266.jpg"
+tags = ["IOT","esp8266","aiphone VA-K"]
 math="false"
 published="true"
 +++
+
+<figure class="blog-figure">
+  <img src="/images/va-k_esp8266.jpg" alt="ESP8266 system-on-chip over the internals of a vintage Aiphone VA-K intercom"/>
+  <figcaption>
+    An ESP8266 System-on-Chip overlayed on top of the guts of a vintage Aiphone VA-K
+  </figcaption>
+</figure>
 
 I live in an apartment building that has a very old buzzer/intercom system. I wanted be able to buzz myself in with only my phone, but there was a catch. I'm a tenant, so it has to be removable and not damage anything. I was mostly successful.
 

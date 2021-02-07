@@ -1,6 +1,9 @@
 +++
 date = "2018-08-06"
+lastmod = "2020-02-02"
 title = "Building physical objects with code"
+description = "Using OpenSCAD to design physical objects that can be 3D printed"
+image = "images/openscad_knob.png"
 tags = ["technical", "CAD"]
 math="false"
 +++

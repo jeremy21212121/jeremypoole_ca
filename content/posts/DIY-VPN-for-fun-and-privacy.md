@@ -1,9 +1,20 @@
 +++
 date = "2018-07-15"
+lastmod = "2021-02-02"
 title = "DIY VPN for fun and security"
-tags = ["technical","VPN","security"]
+description = "The benefits and limitations of running your own OpenVPN server on Digital Ocean"
+image = "images/secured.jpg"
+tags = ["VPN","security","devops"]
 math="false"
+published="true"
 +++
+
+<figure class="blog-figure">
+  <img src="/images/secured.jpg" alt="Computer trying to give you a false sense of security"/>
+  <figcaption>
+    Vaguely reassuring stock image courtesy of <a href="https://pixabay.com/users/danny144-14187277/" target="_blank" rel="noopener">Dan Nelson</a>
+  </figcaption>
+</figure>
 
 ## what exactly is a VPN?
 

@@ -1,6 +1,9 @@
 +++
 date = "2020-11-11"
+lastmod = "2021-02-05"
 title = "Protecting API keys on the front-end using NGINX"
+decription = "Using a reverse proxy to keep secrets out of a client web application"
+image = "images/nginx_security1006x530.jpg"
 tags = ["security","webdev","devops"]
 math="false"
 published="true"

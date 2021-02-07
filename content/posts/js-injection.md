@@ -1,20 +1,30 @@
 +++
 date = "2020-04-03"
-title = "JavaScript injection"
+lastmod = "2021-02-05"
+title = "JavaScript injection on CanadaPost.ca"
+description = "Finding a JavaScript injection vulnerability on the Canada Post website"
+image = "images/js_injection_canadapost.jpg"
 tags = ["javascript","security"]
 math="false"
 published="true"
 +++
 
-# is it exploitable?
+<figure class="blog-figure">
+  <img src="/images/js_injection_canadapost.jpg" alt="JavaScript injection vulnerability on Canada Post"/>
+  <figcaption>
+    JavaScript injection on Canada Post. Images from <a href="https://pixabay.com" target="_blank" rel="noopener">Pixabay</a>.
+  </figcaption>
+</figure>
 
-I recently found a failure to sanitize user input on Canada Post's website.
+I recently discovered a failure to sanitize user input on Canada Post's website.
 
 I stumbled across it by accident. When trying to log in to my account, I was greeted by a never-ending spinner and a console error: Unexpected character.
 
 Following the error, I see some javascript code that contains the username and password I entered. The latter contained and improperly-formatted string. Because my password had an apostrophe in it and it was being reflected back into a script tag unsanitized, it was triggering a syntax error.
 
 After further testing, I determine the console error is only triggered when the username/password are incorrect. In other words, finding it was a total fluke.
+
+# Is it exploitable?
 
 The next question any budding security enthusiast would ask is what can I do with this? Let's look at the code.
 
@@ -66,3 +76,10 @@ Typically, we would hope to add the payload as a query parameter to the end of t
 I just can't find any way to weaponize this. There is another login form, but it works differently so our payload is not effective.
 
 It is entirely possible that I'm missing an obvious method of weaponizing this payload. Unfortunately, I don't believe that to be the case. That means we are at a dead end.
+
+## Update
+
+As of Feb 2021 this bug is still present on canadapost.ca
+
+I tried to notify them but I got nowhere.
+

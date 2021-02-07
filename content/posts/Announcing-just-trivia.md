@@ -1,6 +1,8 @@
 +++
 date = "2020-02-15"
 title = "Soft launch of open-source trivia web app Just Trivia"
+description = "An open-source trivia game with no ads or tracking"
+image = "images/trivia.png"
 tags = ["PWA","JS","Vue.js","Nuxt.js","web app"]
 math="false"
 published="true"

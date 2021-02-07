@@ -1,8 +1,18 @@
 +++
 date = "2018-03-21"
+lastmod = "2020-02-02"
 title = "Block ads on your whole home network with Pi-Hole"
+description = "The benefits and limitations of securing your network with a Pi-Hole"
+image = "images/pihole.png"
 math="false"
 +++
+
+<figure class="blog-figure">
+  <img src="/images/pihole.png" alt="Screenshot of the pi-hole administration interface"/>
+  <figcaption>
+    Screenshot of the pi-hole administration interface
+  </figcaption>
+</figure>
 
 ## definitions
 1. Raspberry Pi (RPi) - a small multi-purpose computer, capable of running Linux, with about as much power as a modern smartphone. It can be connected to a screen via HDMI or used as a server and accessed over SSH.

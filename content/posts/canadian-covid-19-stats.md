@@ -1,6 +1,9 @@
 +++
 date = "2020-04-21"
+lastmod = "2021-02-05"
 title = "Comparing new Canadian COVID-19 stats between the provinces"
+description = "Using new cases per capita, we can compare new cases across Canada"
+image = "images/covid_canada.jpg"
 tags = ["nuxt.js","vue.js","covid-19"]
 math="false"
 published="true"
@@ -13,10 +16,10 @@ published="true"
 </a>
 
 <figure class="blog-figure">
-<img src="/images/sars2.png" alt="Coronavirus emoji"/>
-<figcaption>
-SARS-CoV-2 emoji by <a href="https://pixabay.com/users/iximus-2352783/" target="_blank" rel="noopener">iXimus</a>
-</figcaption>
+  <img src="/images/covid_canada.jpg" alt="Coronavirus emoji over a map of Canada"/>
+  <figcaption>
+    SARS-CoV-2 emoji by <a href="https://pixabay.com/users/iximus-2352783/" target="_blank" rel="noopener">iXimus</a>
+  </figcaption>
 </figure>
 
 

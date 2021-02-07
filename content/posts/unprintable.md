@@ -1,6 +1,9 @@
 +++
 date = "2019-11-28"
+lastmod = "2021-02-04"
 title = "Non-printable characters in HTML"
+description = "You might have these unprintable characters junking up your HTML and be none the wiser"
+image = "images/ascii.png"
 tags = ["html","webdev","bug"]
 math="false"
 published="true"

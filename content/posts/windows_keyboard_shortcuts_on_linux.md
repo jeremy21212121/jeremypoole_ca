@@ -1,7 +1,9 @@
 +++
 date = "2021-01-14"
 title = "Bringing Windows keyboard shortcuts to Linux"
-tags = ["linux","desktop","hotkeys"]
+description = "Using the 'Alt' key and the number pad to type accented characters on Linux, just like on Windows"
+image = "/images/keyboard_hotkeys.jpg"
+tags = ["linux","desktop","cinnamon"]
 math="false"
 published="true"
 +++
@@ -12,6 +14,9 @@ published="true"
   <img src="/images/keyboard_hotkeys.jpg" alt="Silly image of a gangsta linux penguin"/>
   <figcaption>
     I spent way too much time making this ridiculous image.
+Credits: <a href="https://pixabay.com/users/clker-free-vector-images-3736/" target="_blank" rel="noopener">Penguin</a>,
+<a href="https://pixabay.com/users/coxinhafotos-3726685/" target="_blank" rel="noopener">Monitor</a>,
+<a href="https://pixabay.com/users/schmidsi-104144/" target="_blank" rel="noopener">Keyboard</a>
   </figcaption>
 </figure>
 

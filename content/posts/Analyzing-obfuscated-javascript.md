@@ -1,9 +1,20 @@
 +++
 date = "2018-11-03"
+lastmod = "2020-02-02"
 title = "Analyzing obfuscated javascript code"
+description = "A partial analysis of obfuscated JavaScript advertising code"
+image = "images/obfuscated.jpg"
 tags = ["technical", "JS"]
 math="false"
 +++
+
+<figure class="blog-figure">
+  <img src="/images/obfuscated.jpg" alt="Obfuscated CSS code"/>
+  <figcaption>
+    Obfuscated CSS, for some reason.
+Image by <a href="https://pixabay.com/users/pexels-2286921/" target="_blank" rel="noopener">Pexels</a>
+  </figcaption>
+</figure>
 
 I like to look at shady advertizing code, in my spare time, and try to figure out what it does. As you can probably imagine, I'm a ton of fun at parties.
 
