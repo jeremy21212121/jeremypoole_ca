@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-    {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+    {{ if .Params.description }}
+      <meta name="description" content="{{ .Params.description }}">
+    {{ else if .Site.Params.description}}
+      <meta name="description" content="{{ .Site.Params.description }}">
+    {{ end }}
     {{ with .Site.Params.keywords }}<meta name="keywords" content="{{ . }}">{{ end }}
 
     <meta name="og:type" property="og:type" content="article">
     <meta name="og:title" property="og:title" content="{{ .Title }}">
     <meta name="og:site_name" property="og:site_name" content="JeremyPoole.ca">
-    {{ if .Description }}
-    <meta name="og:description" property="og:description" content="{{ .Description }}">
+    {{ if .Params.description }}
+    <meta name="og:description" property="og:description" content="{{ .Params.description }}">
     {{ end }}
     <meta name="og:url" property="og:url" content="{{ .Permalink }}">
     {{ if .Params.image }}
