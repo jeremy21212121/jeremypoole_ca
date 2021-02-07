@@ -2,7 +2,7 @@
 date = "2020-04-03"
 lastmod = "2021-02-05"
 title = "JavaScript injection on CanadaPost.ca"
-description = "Finding a JavaScript injection vulnerability on the Canada Post website"
+description = "Unsanitized user input leads to a JavaScript injection vulnerability on the Canada Post website"
 image = "images/js_injection_canadapost.jpg"
 tags = ["javascript","security"]
 math="false"
