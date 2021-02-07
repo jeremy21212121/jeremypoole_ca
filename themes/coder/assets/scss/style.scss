@@ -27,11 +27,11 @@ body {
   line-height: 1.6em;
   @media only screen and (min-width : $breakpoint-first) {
     font-size: 1.6em;
-    line-height: 1.8em;
+    line-height: 1.6em;
   }
 	@media only screen and (min-width : $breakpoint-second) {
 		font-size: 1.9em;
-		line-height: 2.1em;
+		line-height: 1.9em;
 	}
 }
 
