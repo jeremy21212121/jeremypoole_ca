@@ -36,6 +36,11 @@ text-decoration: underline;
 font-size: 1.5em;
 }
 
+div.highlight pre {
+  background-color: #333333 !important;
+  line-height: 1.8em;
+}
+
 @media screen and (min-width: 1199px) {
 div.content section.container.post {
 max-width: 90%;
