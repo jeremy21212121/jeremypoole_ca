@@ -41,7 +41,7 @@ pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences wi
     name = "LinkedIn"
     logo = "/images/linkedin.png"
     weight = 2
-    url = "https://www.linkedin.com/in/jeremy-poole-10041a10a/"
+    url = "https://www.linkedin.com/in/jeremy-poole-1337h4x0r/"
 [[params.social]]
     name = "Triplebyte certificate"
     logo = "/images/triplebyte.png"
