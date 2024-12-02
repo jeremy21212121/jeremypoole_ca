@@ -1,2 +1,3 @@
 **/themes/
 demo/
+.hugo_build.lock
