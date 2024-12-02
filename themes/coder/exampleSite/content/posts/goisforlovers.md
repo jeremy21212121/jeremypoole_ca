@@ -237,7 +237,7 @@ instead of depending on the context.
 
 **Example:**
 
-      {{ $title := .Site.Title }}
+      {{ $title := site.Title }}
       {{ range .Params.tags }}
         <li> <a href="{{ $baseurl }}/tags/{{ . | urlize }}">{{ . }}</a> - {{ $title }} </li>
       {{ end }}

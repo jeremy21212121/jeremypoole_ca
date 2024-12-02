@@ -10,7 +10,7 @@
     {{ with .Site.Params.keywords }}<meta name="keywords" content="{{ . }}">{{ end }}
 
     <base href="{{ .Site.BaseURL }}">
-    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    <title>{{ block "title" . }}{{ site.Title }}{{ end }}</title>
 
     <link rel="canonical" href="{{ .Permalink }}">
 
@@ -35,13 +35,14 @@
     <link rel="shortcut icon" href="/favicon.ico?v=OmJKq6a6Rp">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-
-    {{ if .RSSLink }}
-      <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-      <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+    {{ with .OutputFormats.Get "RSS" }}
+      {{ if .RelPermalink }}
+      <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ site.Title }}" />
+      <link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml" title="{{ site.Title }}" />
+      {{ end }}
     {{ end }}
 
-    {{ .Hugo.Generator }}
+    {{ hugo.Generator }}
   </head>
 
   <body class="{{ if .Site.Params.rtl }}rtl{{ end }}">
