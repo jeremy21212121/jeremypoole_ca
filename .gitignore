@@ -1,4 +1,4 @@
 export/
 resources/
 deploy.txt
-
+.hugo_build.lock
