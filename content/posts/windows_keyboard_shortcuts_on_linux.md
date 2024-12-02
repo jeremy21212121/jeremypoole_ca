@@ -20,11 +20,15 @@ Credits: <a href="https://pixabay.com/users/clker-free-vector-images-3736/" targ
   </figcaption>
 </figure>
 
+## Note from 2024
+
+I found out about the compose key at some point and switched to that, but this is still a fun silly hack.
+
 ## Preramble
 
 I switched to Linux back in 2007. I hated XP, so I dual-booted Ubuntu. Then I corrupted my Windows partition and the rest is history.
 
-But even before that, I entered French immersion in middle school. We learned to type French on English keyboards on Windows, which has a handy keyboard shortcut for typing these characters: Hold "Alt" and type the 4 digit character code. For example, to type "è" one would hold "Alt" and type 0,2,3,2 on the number pad. These numbers correspond to the unicode character value. 232 == 0xe8 == è
+But even before that, in school we learned to type French on English keyboards on Windows. It has a handy keyboard shortcut for typing these characters: Hold "Alt" and type the 4 digit character code. For example, to type "è" one would hold "Alt" and type 0,2,3,2 on the number pad. These numbers correspond to the unicode character value. 232 == 0xe8 == è
 
 <figure class="blog-figure">
   <img src="/images/accents.png" alt="Table of accented characters and their codes"/>
