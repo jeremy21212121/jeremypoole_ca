@@ -1,11 +1,13 @@
 <footer class="footer">
   <section class="footer-nav">
     <a href="/" title="Go to home page">home</a>
-    <a href="/projects" title="Go to projects">projects</a>
-    <a href="/blog" title="Random blog musings">blog</a>
+    <a href="/posts" title="Random musings">posts</a>
   </section>
   <section class="container copyright">
     {{ if not .Site.Params.hideCopyright }} <p>© {{ now.Year }} <a href="https://jeremypoole.ca">Jeremy Poole</a></p> {{ end }} {{ if not .Site.Params.hideCredits}} {{ if not .Site.Params.hideCopyright }} · {{ end }} Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>. {{ end }}
+    <div>
+      <p id="disclaimer">*This is my personal website. All content and views expressed are my own and are not endorsed or affiliated in any way with my employer.</p>
+    </div>
   </section>
 
 </footer>

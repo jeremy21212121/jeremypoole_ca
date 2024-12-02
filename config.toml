@@ -15,9 +15,9 @@ pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences wi
 
     author = "Jeremy Poole" # Author's name.
     avatar = "/images/av.png" # Avatar url.
-    info = "Front-end engineer, Node.js and Linux" # Author's job title or info.
-    description = "Jeremy Poole is a freelance web developer, specializing in JavaScript, HTML and CSS. He is located in Vancouver, BC, Canada. His favourite front-end framework is Vue.js" # Site description.
-    keywords = "web,developer,javascript,vancouver,vue.js" # Site keywords.
+    info = "Full-stack Web Dev. Go + TS" # Author's job title or info.
+    description = "Jeremy Poole is a full-stack web developer, primarily working with Go and TypeScript. He is located in Vancouver, BC, Canada." # Site description.
+    keywords = "web,developer,javascript,typescript,golang,vancouver,react" # Site keywords.
 
     #disqusShortname = "yourdiscussshortname" # Enable or disable Disqus
 
@@ -54,11 +54,7 @@ pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences wi
     weight = 1
     url  = "/"
 [[menu.main]]
-    name = "Projects"
-    weight = 2
-    url = "/projects/"
-[[menu.main]]
-    name = "Blog"
+    name = "Posts"
     weight = 3
     url = "/posts/"
 
